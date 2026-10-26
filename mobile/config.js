@@ -1,0 +1,2 @@
+window.APP_CONFIG = {"name": "飞寰", "short": "飞寰", "key": "feihuancross", "base": "/huan/", "color": "#ef4444", "intro": "货通全球 · 合规出海", "user": "admin", "pwd": "admin123"};
+window.TABLE_ICONS = {"products": "🛍️", "goods": "🛍️", "live_rooms": "📺", "rooms": "📺", "live_comments": "💬", "comments": "💬", "cart": "🛒", "orders": "🧾", "users": "👥", "group_buys": "🔥", "coupons": "🎟️", "stores": "🏪", "suppliers": "🏭", "members": "💳", "skus": "📦", "posts": "📝", "deliveries": "🚚", "warehouses": "🏬", "brands": "🏷️", "customs": "🛃", "riders": "🛵", "categories": "🗂️", "reviews": "⭐"};
