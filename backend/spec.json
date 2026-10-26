@@ -1,0 +1,312 @@
+{
+  "brand": {
+    "name": "飞寰",
+    "full": "飞寰跨境电商",
+    "tagline": "货通全球 · 合规出海",
+    "port": 8105
+  },
+  "tables": [
+    {
+      "name": "products",
+      "label": "跨境商品",
+      "fields": [
+        {
+          "name": "title",
+          "label": "商品名",
+          "type": "text"
+        },
+        {
+          "name": "price",
+          "label": "售价",
+          "type": "number"
+        },
+        {
+          "name": "stock",
+          "label": "库存",
+          "type": "int"
+        },
+        {
+          "name": "currency",
+          "label": "币种",
+          "type": "text"
+        },
+        {
+          "name": "desc",
+          "label": "描述",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "无人机航拍套装",
+          399,
+          2600,
+          "USD",
+          "消费级4K航拍"
+        ],
+        [
+          "智能手表 GT6",
+          129,
+          8000,
+          "USD",
+          "欧规CE认证"
+        ],
+        [
+          "户外冲锋衣",
+          89,
+          5000,
+          "USD",
+          "欧美尺码 防水指数10000"
+        ]
+      ]
+    },
+    {
+      "name": "warehouses",
+      "label": "海外仓",
+      "fields": [
+        {
+          "name": "name",
+          "label": "仓库名",
+          "type": "text"
+        },
+        {
+          "name": "location",
+          "label": "位置",
+          "type": "text"
+        },
+        {
+          "name": "coverage_days",
+          "label": "时效(天)",
+          "type": "int"
+        },
+        {
+          "name": "status",
+          "label": "状态",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "美西仓",
+          "美国 加州",
+          65,
+          "在用"
+        ],
+        [
+          "欧洲仓",
+          "德国 巴伐利亚",
+          40,
+          "在用"
+        ],
+        [
+          "东南亚仓",
+          "泰国 曼谷",
+          22,
+          "筹备中"
+        ]
+      ]
+    },
+    {
+      "name": "fx_rates",
+      "label": "汇率表",
+      "fields": [
+        {
+          "name": "code",
+          "label": "币种代码",
+          "type": "text"
+        },
+        {
+          "name": "name",
+          "label": "币种",
+          "type": "text"
+        },
+        {
+          "name": "rate",
+          "label": "对人民币汇率",
+          "type": "number"
+        },
+        {
+          "name": "date",
+          "label": "更新日期",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "USD",
+          "美元",
+          7.12,
+          "2026-10-24"
+        ],
+        [
+          "EUR",
+          "欧元",
+          7.78,
+          "2026-10-24"
+        ],
+        [
+          "JPY",
+          "日元",
+          0.047,
+          "2026-10-24"
+        ]
+      ]
+    },
+    {
+      "name": "shipping_orders",
+      "label": "国际物流单",
+      "fields": [
+        {
+          "name": "tracking_no",
+          "label": "运单号",
+          "type": "text"
+        },
+        {
+          "name": "order_id",
+          "label": "订单ID",
+          "type": "int"
+        },
+        {
+          "name": "dest",
+          "label": "目的国/州",
+          "type": "text"
+        },
+        {
+          "name": "customs",
+          "label": "清关状态",
+          "type": "text"
+        },
+        {
+          "name": "carrier",
+          "label": "承运商",
+          "type": "text"
+        },
+        {
+          "name": "note",
+          "label": "备注",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "LG20261024US01",
+          1,
+          "US-CA",
+          "已清关",
+          "FedEx",
+          "预计3日达"
+        ],
+        [
+          "LG20261023DE02",
+          2,
+          "DE-BY",
+          "运输中",
+          "DHL",
+          "海关放行"
+        ]
+      ]
+    },
+    {
+      "name": "cart",
+      "label": "购物车",
+      "fields": [
+        {
+          "name": "user",
+          "label": "用户",
+          "type": "text"
+        },
+        {
+          "name": "product_id",
+          "label": "商品ID",
+          "type": "int"
+        },
+        {
+          "name": "qty",
+          "label": "数量",
+          "type": "int"
+        }
+      ],
+      "seed": []
+    },
+    {
+      "name": "orders",
+      "label": "订单",
+      "fields": [
+        {
+          "name": "order_no",
+          "label": "订单号",
+          "type": "text"
+        },
+        {
+          "name": "user",
+          "label": "下单人",
+          "type": "text"
+        },
+        {
+          "name": "items",
+          "label": "商品明细",
+          "type": "text"
+        },
+        {
+          "name": "total",
+          "label": "金额(元)",
+          "type": "number"
+        },
+        {
+          "name": "address",
+          "label": "收货地址",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "label": "状态",
+          "type": "text"
+        }
+      ],
+      "seed": []
+    },
+    {
+      "name": "users",
+      "label": "用户",
+      "fields": [
+        {
+          "name": "username",
+          "label": "用户名",
+          "type": "text"
+        },
+        {
+          "name": "password",
+          "label": "密码",
+          "type": "text"
+        },
+        {
+          "name": "role",
+          "label": "角色",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "admin",
+          "admin123",
+          "admin"
+        ],
+        [
+          "ops01",
+          "ops123456",
+          "ops"
+        ],
+        [
+          "view01",
+          "view123456",
+          "viewer"
+        ],
+        [
+          "overseas01",
+          "admin123",
+          "海外买家"
+        ]
+      ]
+    }
+  ]
+}
