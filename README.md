@@ -1,27 +1,42 @@
-# 飞寰跨境电商
+# 🌍 飞寰跨境电商
 
-> 货通全球 · 合规出海
+> 连接全球市场，一站式跨境电商解决方案
 
-零依赖（Python 标准库 + SQLite）的 飞寰，飞系电商系列成员。
+## 📖 项目简介
 
-## 运行
+飞寰跨境电商是面向全球化贸易的跨境电商平台，支持多币种结算、多语言界面、海关报关与国际物流对接，帮助商家轻松触达全球消费者，实现买全球、卖全球的跨境贸易愿景。
+
+## ✨ 核心特性
+
+- 💱 **多币种支持** — 自动汇率换算、多币种结算与对账
+- 🌐 **多语言界面** — 中、英、日、韩等多语言国际化支持
+- 🛃 **海关报关** — 电子清关、税费计算、报关单自动生成
+- 🚚 **国际物流** — 对接 DHL、FedEx、顺丰国际等主流物流商
+- 📋 **合规管理** — 各国贸易政策、禁限商品、关税规则库
+- 🏪 **全球店铺** — 多站点运营、本地化营销与库存管理
+- 📊 **跨境数据** — 全球销售分析、汇率波动监控、物流追踪
+
+## 🚀 快速开始
 
 ```bash
-cd backend
-python server.py
-# 访问 http://127.0.0.1:8105/ ，三角色: admin/admin123 · ops01/ops123456 · view01/view123456
+# 克隆项目
+git clone https://github.com/dukema81/feihuan-cross.git
+cd feihuan-cross
+
+# 安装依赖
+npm install
+
+# 启动开发环境
+npm run dev
+
+# 构建生产版本
+npm run build
 ```
 
-## 测试
+## 📄 许可证
 
-```bash
-python -m pytest tests/ -q
-```
+本项目基于 [MIT License](LICENSE) 开源许可协议。
 
-## 目录
+---
 
-- backend/  通用引擎 engine.py + 规格 spec.json + 服务入口 server.py
-- frontend/ 原生 JS SPA（门店 + 统计 + 规格驱动后台）
-- tools/    专属 Logo（icon.svg）+ UI 巡检（ui_check.py，零依赖探活+截图）
-- docs/     建设方案
-- tests/    API 集成测试（真实起服务全链路断言）
+Made with ❤️ by dukema81
